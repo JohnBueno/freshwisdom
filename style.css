@@ -1,0 +1,267 @@
+/*
+Theme Name: Fresh Wisdom
+Description: Theme for fresh wisdom.
+Author: Bueno
+Version: 1.4
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Montserrat', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong{font-weight: bold;}
+em{font-style: italic;}
+
+h1, h2, h3, h2 a, a{color: #8AA335;}
+.page-id-2 .content h1, .page-id-2 .content a{color: #1eb4c1;}
+.page-id-6 h1, .page-id-6 h2, .page-id-6 h2 a, .page-id-6 h3, a{color: #F68B1F;}
+.page-id-8 h1, .page-id-8 h2, .page-id-8 h2 a, .page-id-8 h3, a{color: #193867;}
+#primary h3{color: #f68b1f;}
+
+
+h1{font-size: 50px; margin-bottom: 32px;}
+h2{font-size: 30px;}
+h3{font-size: 19px; margin-bottom: 5px;}
+p{font-size: 16px; margin-bottom: 24px; line-height: 24px;}
+a{color: #8AA335;}
+a:hover{text-decoration: none; color: #000;}
+#info{position: relative; top: -15px; left: -35px; display: block;}
+#info .slide{position: relative; cursor: pointer;}
+#recession{display: none; top: -38px;}
+#growth{display: none; top: -73px;}
+#info img{}
+#push-up{position: relative;}
+
+#header{
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	-moz-box-shadow: 0px 1px 36px 0px;
+	-webkit-box-shadow: 0px 1px 36px 0px;
+	box-shadow: 0px 1px 36px 0px;
+}
+#header .headerContainer{background: #1eb4c1; padding: 15px 0;}
+#header .social{background: #193867; padding: 5px 0; text-align: right;}
+#header .social a{color: #fff; font-size: 12px; margin-right: 10px;}
+#header .social a:hover{text-decoration: underline;}
+
+#header .tagline{color: #fff; margin-top: 20px;}
+#header .tagline p{font-size: 14px;}
+
+.navigation{position: relative; z-index: 1; margin-bottom: 10px; height: 30px;}
+.navigation ul{float: right; margin-right: 65px;}
+.navigation ul li{position: relative; float: left;}
+.navigation a{display: block; float: left; padding: 5px 0; width: 100px; text-align: center; color: #fff !important;}
+.navigation .about{background: #f68b1f;}
+.navigation .contact{background: #193764;}
+.navigation .blog{background: #8aa335;}
+
+.navigation .menu-item-48{background: #f68b1f;}
+.navigation .menu-item-49{background: #193764;}
+.navigation .menu-item-50{background: #8aa335;}
+
+.navigation ul.sub-menu{display: none; position: absolute; top: 24px; left: 0; font-size: 11px; background: #8aa335;}
+.navigation ul.sub-menu li{display: block; float: none;}
+
+
+.categories{margin-bottom: 35px;}
+.categories ul{float: right; margin-right: 70px;}
+.categories ul li{float: left; margin-left: 20px;}
+.categories a{color: #000; font-size: 14px;}
+.categories a:hover{color: #F68B1F;}
+
+#header .logo{display: block; text-indent: -9000px; width: 381px; height: 59px; background: url(images/logo-freshwisdom.png) no-repeat;}
+
+
+
+#primary .widget-container{font-size: 12px; line-height: 18px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dotted #1eb4c1;}
+#primary #text-2 h3, #primary #text-2 a{color: #f68b1f;}
+#primary #text-3 h3, #primary #text-3 a{color: #193764;}
+#primary #twitter-2 h3, #primary #twitter-2 a{color: #1eb4c1;}
+.widget_twitter ul{font-size: 10px;}
+.widget_twitter ul li{margin-bottom: 10px;}
+
+
+.pagination .nav-previous{float: left;}
+.pagination .nav-next{float: right;}
+
+.post{border-bottom: 1px dotted #22b3c0; margin-bottom: 20px;}
+.post h2{margin-bottom: 10px;}
+.post .thumbnail{float: left; width: 210px;}
+.post .excerpt{float: left; width: 350px; padding-left: 5px;}
+
+.content ul{list-style-type: disc; margin-left: 20px; margin-bottom: 20px;}
+.content ul li{margin-bottom: 5px;}
+
+#footer .container{border-top: 1px dotted #22b3c0; padding-bottom: 50px; font-size: 14px !important;}
+#footer ul{margin-top: 10px;}
+#footer ul li{float: left; margin-right: 15px;}
+#footer .copyright{text-align: right; margin-top: 10px;}
+#footer .copyright p{font-size: 12px !important;}
+
+.wpcf7-form input[type='text']{width: 300px;}
+.wpcf7-form textarea{width: 300px; resize: none;}
+.wpcf7-form label{font-size: 14px;}
+div.wpcf7-mail-sent-ok{border: none !important; line-height: 24px; font-size: 16px;}
+
+.addthis_toolbox{margin: 20px 0;}
+
+/* =Images
+-------------------------------------------------------------- */
+
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 15px;
+	margin-top: 4px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 15px;
+	margin-top: 4px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 10px;
+}
+.wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	margin: 5px 5px 0;
+}
+.wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+.wp-smiley {
+	margin: 0;
+}
+.gallery {
+	margin: 0 auto 18px;
+}
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery img {
+	border: 2px solid #cfcfcf;
+}
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery img {
+	border: 10px solid #f1f1f1;
+}
+.gallery br+br {
+	display: none;
+}
+#content .attachment img {/* single attachment images should be centered */
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+	.copyright{clear: both; display: block; float: none; text-align: left !important; padding-top: 10px;}
+	#wrapper{padding: 0 10%;}
+ 	.wpcf7-form table{width: 60%;}
+	.wpcf7-form td{display: inline; margin-bottom: 20px;}
+	.wpcf7-form tr{margin-bottom: 20px;}
+	.navigation a{width: 85px;}
+	.tagline{padding-left: 10%;}
+	a.logo{width: 100%; background-size: 80%;}
+}
