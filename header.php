@@ -146,16 +146,12 @@ $args = array(
 <div class="container">
 	<div id="wrapper" class="hfeed">
 		<div class="row navigation">
-			<div class="span12">
+			<div class="span11 offset1">
 				
 				<?php wp_nav_menu(array(
 					'menu' => 'Main', 
 					'container' => false
 					)); ?> 
-				
-				
-				
-				
 				
 				<!--
 <ul>
@@ -189,7 +185,7 @@ $args = array(
 		</div>
 		
 		<div class="row categories">
-			<div class="span8 offset4">
+			<div class="span11 offset1">
 				<?php if(is_home() || is_category()): ?>
 				<ul>
 				<? foreach($categories as $cat): ?>

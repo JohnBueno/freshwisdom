@@ -3,14 +3,17 @@ $('document').ready(function(){
 	$('.menu li.menu-item').hover(
 		function(){
 			
-			if(!$(this).hasClass('current_page_item') && $(this).find('.sub-menu').length != 0){
+			if(!$(this).hasClass('current_page_item') && $(this).find('.sub-menu').length == 0){
 				$(this).stop(true, false).animate({'height': '30px'}, 150);
 			}
+
 		},
 		function(){
-			if(!$(this).hasClass('current_page_item') && $(this).find('.sub-menu').length != 0){
+
+			if(!$(this).hasClass('current_page_item') && $(this).find('.sub-menu').length == 0){
 				$(this).stop(true, false).animate({'height': '26px'}, 150);
 			}
+
 		}
 	);
 

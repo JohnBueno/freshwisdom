@@ -99,9 +99,19 @@ a:hover{text-decoration: none; color: #000;}
 .navigation .contact{background: #193764;}
 .navigation .blog{background: #8aa335;}
 
-.navigation .menu-item-48{background: #f68b1f;}
-.navigation .menu-item-49{background: #193764;}
-.navigation .menu-item-50{background: #8aa335;}
+/*
+.navigation li:nth-child(4n-1){background: #f68b1f;}
+.navigation li:nth-child(3n-1){background: #193764;}
+*/
+.navigation li:nth-child(1n){background: #f68b1f;}
+.navigation li:nth-child(2n){background: #193764;}
+.navigation li:nth-child(3n){background: #8aa335;}
+
+/*
+.navigation .menu-item-8{background: #f68b1f;}
+.navigation .menu-item-9{background: #193764;}
+.navigation .menu-item-10{background: #8aa335;}
+*/
 
 .navigation ul.sub-menu{display: none; position: absolute; top: 24px; left: 0; font-size: 11px; background: #8aa335;}
 .navigation ul.sub-menu li{display: block; float: none;}
