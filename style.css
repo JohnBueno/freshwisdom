@@ -95,17 +95,20 @@ a:hover{text-decoration: none; color: #000;}
 .navigation ul{float: right; margin-right: 65px;}
 .navigation ul li{position: relative; float: left;}
 .navigation a{display: block; float: left; padding: 5px 0; width: 100px; text-align: center; color: #fff !important;}
-.navigation .about{background: #f68b1f;}
-.navigation .contact{background: #193764;}
-.navigation .blog{background: #8aa335;}
+
 
 /*
 .navigation li:nth-child(4n-1){background: #f68b1f;}
 .navigation li:nth-child(3n-1){background: #193764;}
 */
+.navigation li{background: #f68b1f;}
+.navigation li ul{background: #f68b1f;}
 .navigation li:nth-child(1n){background: #f68b1f;}
+.navigation li:nth-child(1n) ul{background: #f68b1f !important;}
 .navigation li:nth-child(2n){background: #193764;}
+.navigation li:nth-child(2n) ul{background: #193764 !important;}
 .navigation li:nth-child(3n){background: #8aa335;}
+.navigation li:nth-child(3n) ul{background: #8aa335 !important;}
 
 /*
 .navigation .menu-item-8{background: #f68b1f;}
@@ -113,7 +116,7 @@ a:hover{text-decoration: none; color: #000;}
 .navigation .menu-item-10{background: #8aa335;}
 */
 
-.navigation ul.sub-menu{display: none; position: absolute; top: 24px; left: 0; font-size: 11px; background: #8aa335;}
+.navigation ul.sub-menu{display: none; position: absolute; top: 24px; left: 0; font-size: 11px; }
 .navigation ul.sub-menu li{display: block; float: none;}
 
 
